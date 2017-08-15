@@ -6,6 +6,7 @@
 package estructurasdedatos;
 
 import estructurasdedatos.cap1.complejidad.Ciclos;
+import estructurasdedatos.cap1.complejidad.Condicionales;
 
 /**
  *
@@ -23,6 +24,13 @@ public class EstructurasDeDatos {
         ejerciciosciclos.ejecutarejercicio2();
         ejerciciosciclos.ejecutarejercicio3();
         ejerciciosciclos.ejecutarejercicio4();
+        
+        
+        Condicionales ejercicioscondicionales = new Condicionales();
+        
+        ejercicioscondicionales.ejecutarejercicio5();
+        ejercicioscondicionales.ejecutarejercicio6();
+        ejercicioscondicionales.ejecutarejercicio7();
         
         
         

@@ -14,7 +14,8 @@ import java.util.Scanner;
 public class Ciclos {
     
     public void ejecutarejercicio1() {
-    //ejercicio 19   
+    //ejercicio 19 
+        System.out.println("ejercicios 1 ciclos ");
         System.out.println("19.  Que muestre la tabla de multiplicar de un número cualquiera ");
         int numero = 0;
         System.out.println("Introduzca un numero: ");
@@ -26,7 +27,7 @@ public class Ciclos {
         } }
     
     public void ejecutarejercicio2(){ 
-        
+        System.out.println("ejercicios 2 ciclos ");
         System.out.println("24.  Que calcule la suma de los cuadrados de los 100 primeros números "); 
         int suma = 0; 
         for(int i = 0; i < 50; i++) { 
@@ -35,6 +36,7 @@ public class Ciclos {
                 }}
 
     public void ejecutarejercicio3(){
+            System.out.println("ejercicios 3 ciclos ");
             Scanner n=new Scanner(System.in);
             System.out.println("23.  Que calcule la media de X números, se dejarán de solicitar números hasta que se introduzca el cero ");
             int num,suma2,elementos;
@@ -65,6 +67,7 @@ public class Ciclos {
             }}
 
     public void ejecutarejercicio4(){
+        System.out.println("ejercicios 4 ciclos ");
         System.out.println("21. Que calcule el factorial de un número cualquiera y lo muestre en pantalla. ");
         Scanner leer=new Scanner(System.in);
         System.out.println("Introduzca un numero: ");
