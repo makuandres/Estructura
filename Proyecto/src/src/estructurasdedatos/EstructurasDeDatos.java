@@ -20,10 +20,8 @@ public class EstructurasDeDatos {
     public static void main(String[] args) {
         Ciclos ejerciciosciclos = new Ciclos();
         
-        ejerciciosciclos.ejecutarejercicio1();
-        ejerciciosciclos.ejecutarejercicio2();
-        ejerciciosciclos.ejecutarejercicio3();
-        ejerciciosciclos.ejecutarejercicio4();
+        ejerciciosciclos.ejecutarejerciciosciclos();
+        
         
         
         Condicionales ejercicioscondicionales = new Condicionales();
