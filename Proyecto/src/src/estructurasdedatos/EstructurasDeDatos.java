@@ -32,12 +32,20 @@ public class EstructurasDeDatos {
         ejercicioscondicionales.ejecutarejercicio7();
         */
         
-        EjerciciosComplejidad ejercicioscomplejos = new EjerciciosComplejidad();
+        EjerciciosComplejidad ejerciciosccomplejos = new EjerciciosComplejidad();
         
-        ejercicioscomplejos.complejidadO1();
-        ejercicioscomplejos.complejidadOn();
+        ejerciciosccomplejos.ejecutarejerciciosccomplejos();
     }
     
   
     
 }
+
+
+
+
+
+
+
+
+

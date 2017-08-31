@@ -12,31 +12,32 @@ package estructurasdedatos.cap1.tiposdedatos;
 public class figurasgeometricas {
     
     private  String codigo;
-   private  String tipo;
-   private  String nombre;
+    private  String tipo;
+    private  String nombre;
   
   
+        public String getCodigo(){
+        return codigo;
+        }
+        public void setCodigo(String codigo){
+        this.codigo = codigo;
+        }
   
-  public void getCodigo(String codigo){
-    return codigo;
-  }
+        
+        public String setTipo(){
+        return tipo;
+        }
+        public void setTipo(String tipo){
+        this.tipo = tipo;
+        }
   
-  public String setCodigo(){
-    this.codigo = codigo;
-  }
+        
+        public String setNombre(){
+        return nombre;
+        }
+        public void getNombre(String nombre){
+        this.nombre = nombre;
+        }
    
-  public void getTipo(String tipo)){
-    return tipo;
-  }
-  public String setTipo({
-    this.tipo = tipo;
-  }
-  
-  public void String getNombre(String nombre){
-    this.nombre = nombre;
-  }
-   public String setNombre(){
-    this.nombre = nombre;
-}
     
 }
