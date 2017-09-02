@@ -7,13 +7,15 @@ package estructurasdedatos.cap1.complejidad;
 
 import java.util.Scanner;
 
+
+
 /**
  *
  * @author tusk
  */
 public class EjerciciosComplejidad {
     
-     public void ejecutarejerciciosccomplejos() {
+    public void ejecutarejerciciosccomplejos() {
         
         Scanner entrada = new Scanner(System.in);
         
@@ -32,24 +34,24 @@ public class EjerciciosComplejidad {
     
      case 1:       
         
-            int a;
-            int b;
-            int c;
-            a=10;
-            b=2;
-            c=a+b;
-            System.out.println(c);        
+            int a;                                  // O(1)
+            int b;                                  // O(1)
+            int c;                                  // O(1)
+            a=10;                                   // O(1)
+            b=2;                                    // O(1)
+            c=a+b;                                  // O(1)
+            System.out.println(c);                  // O(1)
         
         break;
     
      case 2:
         
-            int n=100;
-            boolean continuar = true;
-            if(continuar){
-                int i;
-                for(i=0; i<=n; i++){
-                System.out.println("numero "+ i);
+            int n=100;                              // O(1)                     
+            boolean continuar = true;               // O(1)
+            if(continuar){                          // O(1)
+                int i;                              // O(1)
+                for(i=0; i<=n; i++){                // O(n)
+                System.out.println("numero "+ i);   // O(n)
                 }
                 }
         break;
@@ -57,40 +59,40 @@ public class EjerciciosComplejidad {
         
      case 3:
          
-            int numero = 0;
-            System.out.println("ingrese numero de tablas: ");
-            Scanner m=new Scanner(System.in);
-            numero=m.nextInt();
-            System.out.println("Tablas de Multiplicar: ");
+            int numero = 0;                                         // O(1)
+            System.out.println("ingrese numero de tablas: ");       // O(1)
+            Scanner m=new Scanner(System.in);                       // O(1)
+            numero=m.nextInt();                                     // O(1)
+            System.out.println("Tablas de Multiplicar: ");          // O(1)
                 	
-            for (int i=1; i<=numero; i++){                           
-		for (int j=1;j<=10;j++){
-                    System.out.println(i +" * " + j + " = "+ i*j);
+            for (int i=1; i<=numero; i++){                          // O(n) 
+		for (int j=1;j<=10;j++){                            // O(n)
+                    System.out.println(i +" * " + j + " = "+ i*j);  // O(n)
                     } } 
          break;
          
          
          
      case 4:
-            int x;
-            System.out.println("ingrese numero a buscar: ");
-            Scanner z=new Scanner(System.in);
-            x=z.nextInt();
-         int arreglo[]={1,2,3,4,5,6,7,8,9,10};
+            int x;                                                                                                      // O(1)       
+            System.out.println("ingrese numero a buscar: ");                                                            // O(1)
+            Scanner z=new Scanner(System.in);                                                                           // O(1)
+            x=z.nextInt();                                                                                              // O(1)
+         int arreglo[]={1,2,3,4,5,6,7,8,9,10};                                                                          // O(1)
          
-         int posicioninicial=0;
-         int posicionfinal=arreglo.length-1;
-         int posicioncentral;
-         
-         while(posicioninicial<=posicionfinal){
-             posicioncentral =(posicionfinal+posicioninicial)/2;
-             if(arreglo[posicioncentral] == x){
-                 System.out.println("Dato encontrado entre las posiciones " +posicioninicial+ " y " +posicionfinal);
+         int posicioninicial=0;                                                                                         // O(1)
+         int posicionfinal=arreglo.length-1;                                                                            // O(1)
+         int posicioncentral;                                                                                           // O(1)
+            
+         while(posicioninicial<=posicionfinal){                                                                         // O(n)
+             posicioncentral =(posicionfinal+posicioninicial)/2;                                                        // O(n)
+             if(arreglo[posicioncentral] == x){                                                                         // O(n)
+                 System.out.println("Dato encontrado entre las posiciones " +posicioninicial+ " y " +posicionfinal);    // O(n)
                  break;
-             }else if(x < arreglo[posicioncentral]){
-                 posicionfinal = posicioncentral-1;
+             }else if(x < arreglo[posicioncentral]){                                                                    // O(n)
+                 posicionfinal = posicioncentral-1;                                                                     // O(1)
                 }else {
-                    posicioninicial = posicioncentral+1;
+                    posicioninicial = posicioncentral+1;                                                                // O(n)
              }}
         
         
@@ -100,6 +102,3 @@ public class EjerciciosComplejidad {
         } //me cierra el switch
             }// me cierra el menu
          }// me cierra la clase
-         
-         
-          
