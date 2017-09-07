@@ -8,6 +8,7 @@ package estructurasdedatos;
 import estructurasdedatos.cap1.complejidad.Ciclos;
 import estructurasdedatos.cap1.complejidad.Condicionales;
 import estructurasdedatos.cap1.complejidad.EjerciciosComplejidad;
+import estructurasdedatos.cap2.arreglos.Vector;
 
 /**
  *
@@ -35,6 +36,13 @@ public class EstructurasDeDatos {
         EjerciciosComplejidad ejerciciosccomplejos = new EjerciciosComplejidad();
         
         ejerciciosccomplejos.ejecutarejerciciosccomplejos();
+        
+        
+        Vector ejerciciovector = new Vector();
+        
+        ejerciciovector.crearVector(0);
+        
+        
     }
     
   
