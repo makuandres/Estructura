@@ -12,63 +12,74 @@ package estructurasdedatos.cap2.arreglos;
 public class Vector {
     
     private int tamaño;
-    private String[] vector;
+    private int vector[];
 
-
-    public void crearVector(int n) {        
-        this.tamaño = n; 
-        this.vector = new String[this.tamaño]; 
-    }
-    
-    public void settam(int t) {
-        this.tamaño = t;
-    }
-    
-    public int gettam() {
-        return tamaño;
-    }   
-    
-    public boolean Eliminar(int t) {  
-        this.vector = null;
-        return true;
-    }
-    
-    public void Insertar(String n, int pos) { 
-        vector[pos] = n;                     
-    }
-    
-    public String[] listar() {
-
-        for (int i = 0; i < tamaño; i++) {     
-            System.out.println(vector[i]);  
+    public Vector(int tamaño){
+        this.tamaño = tamaño;
+        this.vector = new int [tamaño];
         }
-        return vector;
-    }
     
-    public void buscarDato(String dato) {  
-        int i = 0;
-
-        while (i < tamaño) {                   
-            if (vector[i].equals(dato)) {   
-                System.out.println("el dato solicitado esta en la posicion: " + i);  
+    public void Insertar(int t, int dato    ){
+        if ((t < tamaño)&&(t > 0)){
+            this.vector[t]=dato;
+        }
+        else { System.out.println("El tamaño ingresado no es correcto");
+        }
             }
-            i++;
+    
+    public void Listar(){
+        int t;
+        for (t =0; t < tamaño; t++){
+        System.out.println(vector[t]);
         }
-    } 
+            }
     
-    public void actualizar (int pos, String dato){   
-        if(pos < tamaño){                             
-            System.out.println("la posicion indicada no existe"); 
-        }else {
-            vector[pos]= dato;                       
-        }
-    } 
+    public void Ordenar(){
+        int aux, t, j;
+        for(t = 0; t < tamaño; t++){
+            for(j = t+1; j < tamaño; j++){
+                if(vector[t]>vector[t+1]){
+                    aux=vector[t];
+                    vector[t]=vector[j];
+                    vector[j]=aux;
+                    }
+                        }
+                            }
+                                }
     
-    public void borrarposicion (int pos){            
-        vector[pos]= null;                           
-}
+    public void busquedabinaria(int t){
+        int posicion_inicial=0;
+        int posicion_final=vector.length-1;
+        int posicion_central;
+        
+        while( posicion_inicial <= posicion_final){
+            posicion_central=(posicion_final + posicion_inicial)/2;
+            if(vector[posicion_central]==t){
+                System.out.println("El dato esta en  "+posicion_inicial+" y "+posicion_final);
+                }
+            else if(t < vector[posicion_central]){
+                posicion_final=posicion_central-1;}
+                else 
+                    {posicion_inicial=posicion_central+1;
+                }
+                    }
+                        }
     
+    public void Update(int t, int dato){
+        if ((t < tamaño)&&(t > 0)){
+            
+            this.vector[t]=dato;
+            } else
+                {   System.out.println("El tamaño ingresado no es correcto");
+            }
+                }
     
+    public void Borrar(int t){
+         if ((t < tamaño)&&(t > 0)){
+             this.vector[t]= null;
+         }
+         else { System.out.println("El tamaño ingresado no es correcto");
+                }
+                    }
     
-    
-}
+    }
