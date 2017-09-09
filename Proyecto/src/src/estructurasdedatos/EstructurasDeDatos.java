@@ -33,14 +33,12 @@ public class EstructurasDeDatos {
         ejercicioscondicionales.ejecutarejercicio7();
         */
         
-        EjerciciosComplejidad ejerciciosccomplejos = new EjerciciosComplejidad();
+       /* EjerciciosComplejidad ejerciciosccomplejos = new EjerciciosComplejidad();
         
-        ejerciciosccomplejos.ejecutarejerciciosccomplejos();
+        ejerciciosccomplejos.ejecutarejerciciosccomplejos();*/
         
         
-        Vector ejerciciovector = new Vector();
-        
-        ejerciciovector.crearVector(0);
+     
         
         
     }

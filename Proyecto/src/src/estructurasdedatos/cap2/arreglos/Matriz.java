@@ -58,12 +58,9 @@ public class Matriz {
             }
     
     public void Borrar(int fi, int co){
-       if((fi < nfilas)&&(co <  ncolumnas)){
-           this.matriz[fi][co]=null;}
-       else {
-            System.out.println("Numero Filas o Columnas es mayor que la matriz");
-        }
-            }
+       this.nfilas = fi;
+        this.ncolumnas = co;
+        this.matriz[fi][co] = 0;
     
     
     }
@@ -74,3 +71,4 @@ public class Matriz {
     
     
     
+}
