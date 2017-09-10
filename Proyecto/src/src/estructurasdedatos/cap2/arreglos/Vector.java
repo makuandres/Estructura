@@ -20,19 +20,14 @@ public class Vector {
         this.vector = new String[this.tamaño]; 
     }
     
-    public void settam(int t) {
+    public void settamaño(int t) {
         this.tamaño = t;
     }
     
-    public int gettam() {
+    public int gettamaño() {
         return tamaño;
     }   
-    
-    public boolean Elimiar(int t) {  
-        this.vector = null;
-        return true;
-    }
-    
+     
     public void Insertar(String n, int posicion) { 
         vector[posicion] = n;                     
     }
@@ -55,6 +50,36 @@ public class Vector {
         }
     } 
     
+    public void ordenarVector(int vector[]){
+        for(int i = 0; i < vector.length - 1; i++)
+        {
+            for(int j = 0; j < vector.length - 1; j++)
+            {
+                if (vector[j] < vector[j + 1])
+                {
+                    int temporal = vector[j+1];
+                    vector[j+1] = vector[j];
+                    vector[j] = temporal;
+                   }
+                    }
+                      }
+                        }
+    
+    public void buscarBinario(int posicion, int vector[]){
+    Integer posicion_inicial=0;
+    Integer posicion_final=vector.length-1;
+    Integer posicion_central = null;
+    while(posicion_inicial<=posicion_final){
+        if (vector[posicion_central]==posicion){
+            System.out.println("el dato esta en:"+posicion_inicial+"y"+posicion_final);
+            }
+            else {if(posicion<=vector[posicion_central]){
+            posicion_final=posicion_central;
+            }
+                }
+                    }
+                        } 
+    
     public void actualizar (int posicion, String dato){   
         if(posicion < tamaño){                             
             System.out.println("la posicion indicada no existe"); 
@@ -65,6 +90,11 @@ public class Vector {
     
     public void borrarposicion (int posicion){            
         vector[posicion]= null;                           
+    }
+    
+    public boolean Elimiar(int t) {  
+        this.vector = null;
+        return true;
     }
     
     

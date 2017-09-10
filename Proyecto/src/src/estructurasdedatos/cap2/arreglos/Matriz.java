@@ -11,18 +11,18 @@ package estructurasdedatos.cap2.arreglos;
  */
 public class Matriz {
     
-    
+    //declarar las variables//
     private int nfilas;
     private int ncolumnas;
     private int matriz[][];
     
-    
+    //se le implementa en la estructura matriz//
     public Matriz(int nfilas, int ncolumnas){
         this.nfilas = nfilas;
         this.ncolumnas = ncolumnas;
         this.matriz = new int [nfilas][ncolumnas];
         }
-    
+    //se incorporan los datos dentro de la matriz//
     public void Insertar(int fi, int co, int dato){
         if((fi < nfilas)&& (co < ncolumnas)){
             this.matriz[fi][co]=dato;}
@@ -32,7 +32,7 @@ public class Matriz {
     
     
     
-    
+    //  para listar la matriz//
     public void Mostrar(){
         for(int fi=0; fi < nfilas; fi++){
             for(int co=0; co < ncolumnas; co++){
@@ -40,14 +40,18 @@ public class Matriz {
                 }
                     }
                         }
-    
-    public int Buscar(int fi, int co){
-        if((fi < nfilas)&&(co <  ncolumnas)){
-            return this.matriz[fi][co];}
-        else { System.out.println("Numero Filas o Columnas es mayor que la matriz");
-        }
+    // para buscar un dato//
+    public int Buscar(int dato){
+
+        for (int fi = 0; fi < matriz.length; fi++) {   
+            for (int co = 0; co < matriz.length; co++) {  
+                if (this.matriz[fi][co] == dato) {       
+                    System.out.println("el dato se encuenta en la posicion: " + fi+ "," + co);
+               }
+                }
+                    }
         return 0;
-    }
+                        }
     
     public void Update(int fi, int co, int dato){
         if((fi < nfilas)&&(co <  ncolumnas)){
@@ -56,7 +60,7 @@ public class Matriz {
             System.out.println("Numero Filas o Columnas es mayor que la matriz");
             }         
             }
-    
+    //eliminar algun dato de la matriz//
     public void Borrar(int fi, int co){
        this.nfilas = fi;
         this.ncolumnas = co;
