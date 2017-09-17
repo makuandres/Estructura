@@ -33,6 +33,7 @@ public class ListaSimple {
         if (this.cabeza == null && this.cola == null) {
             this.cabeza = nodo;
             this.cola   = nodo;
+            
         } else {
             cola.setsiguiente(nodo);
             this.cola = nodo;
@@ -58,10 +59,9 @@ public class ListaSimple {
     public void listar() {
         if (!(this.cabeza == null && this.cola == null)) {
             NodoSimple aux = cabeza;
-
             int i = 0;
             while (aux != null) {
-                System.out.println("El dato :" + "(" + aux.getdato() + ")" + " " + "esta en la posicion" + "(" + i + ")");
+                System.out.println("El dato :" + "(" + aux.getdato() + ")" + " " + "se encuentra en la posicion" + "(" + i + ")");
                 i++;
             }
         }
