@@ -9,6 +9,7 @@ import estructurasdedatos.cap1.complejidad.Ciclos;
 import estructurasdedatos.cap1.complejidad.Condicionales;
 import estructurasdedatos.cap1.complejidad.EjerciciosComplejidad;
 import estructurasdedatos.cap2.arreglos.Vector;
+import estructurasdedatos.cap2.listas.ListaSimple;
 
 /**
  *
@@ -21,21 +22,26 @@ public class EstructurasDeDatos {
      */
     public static void main(String[] args) {
         /*Ciclos ejerciciosciclos = new Ciclos();
+          ejerciciosciclos.ejecutarejerciciosciclos();
         
-        ejerciciosciclos.ejecutarejerciciosciclos();
-        
-        
-        
+               
         Condicionales ejercicioscondicionales = new Condicionales();
-        
         ejercicioscondicionales.ejecutarejercicio5();
         ejercicioscondicionales.ejecutarejercicio6();
         ejercicioscondicionales.ejecutarejercicio7();
         */
         
        /* EjerciciosComplejidad ejerciciosccomplejos = new EjerciciosComplejidad();
-        
-        ejerciciosccomplejos.ejecutarejerciciosccomplejos();*/
+          ejerciciosccomplejos.ejecutarejerciciosccomplejos();*/
+       
+       
+       ListaSimple ejecutarlistasimple = new ListaSimple();
+       ejecutarlistasimple.crearlistasimple();
+       /*ejecutarlistasimple.insertar(5);
+       ejecutarlistasimple.eliminar(3);
+       ejecutarlistasimple.listar();*/
+       
+       
         
         
      
