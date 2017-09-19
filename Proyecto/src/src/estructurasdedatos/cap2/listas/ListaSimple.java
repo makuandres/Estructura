@@ -59,7 +59,8 @@ public class ListaSimple {
             NodoSimple aux = cabeza;                                      // creamos el nodo que nos va a recorres la lista nodo por nodo imprimiendo el valor que hay en cada nodo
             int i = 0;                                                    // ciclo por el cual el nodo recorre la lista hasta que la cola tenga el valor de null
             while (aux != null) {
-                System.out.println("El dato :" + "(" + aux.getdato() + ")" + " " + "se encuentra en la posicion" + "(" + i + ")");
+                System.out.println("El dato de la lista simple :" + "(" + aux.getdato() + ")" + " " + "se encuentra en la posicion" + "(" + i + ")");
+                aux = aux.getsiguiente();
                 i++;
             }
         }
