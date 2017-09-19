@@ -21,7 +21,8 @@ public class EstructurasDeDatos {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        /*Ciclos ejerciciosciclos = new Ciclos();
+        
+        *Ciclos ejerciciosciclos = new Ciclos();
           ejerciciosciclos.ejecutarejerciciosciclos();
         
                
@@ -35,11 +36,24 @@ public class EstructurasDeDatos {
           ejerciciosccomplejos.ejecutarejerciciosccomplejos();*/
        
        
-       ListaSimple ejecutarlistasimple = new ListaSimple();
-       ejecutarlistasimple.crearlistasimple();
-       /*ejecutarlistasimple.insertar(5);
-       ejecutarlistasimple.eliminar(3);
-       ejecutarlistasimple.listar();*/
+       /*ListaSimple listasimple = new ListaSimple();
+       listasimple.crearlistasimple();
+       listasimple.insertar(6);
+       listasimple.listar();
+       listasimple.eliminar(6);
+       listasimple.listar();*/
+       
+       
+       ListaDoble listadoble = new ListaDoble();
+       listadoble.crearlistadoble();
+       listadoble.insertar(9);
+       listadoble.insertar(4);
+       listadoble.listar();
+       //listadoble.eliminar(4);
+       //listadoble.modificar(9);
+       listadoble.listar();
+       
+       
        
        
         
