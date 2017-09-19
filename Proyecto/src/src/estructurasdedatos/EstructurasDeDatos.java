@@ -9,6 +9,7 @@ import estructurasdedatos.cap1.complejidad.Ciclos;
 import estructurasdedatos.cap1.complejidad.Condicionales;
 import estructurasdedatos.cap1.complejidad.EjerciciosComplejidad;
 import estructurasdedatos.cap2.arreglos.Vector;
+import estructurasdedatos.cap2.listas.ListaDoble;
 import estructurasdedatos.cap2.listas.ListaSimple;
 
 /**
@@ -35,29 +36,25 @@ public class EstructurasDeDatos {
           ejerciciosccomplejos.ejecutarejerciciosccomplejos();*/
        
        
-       ListaSimple ejecutarlistasimple = new ListaSimple();
-       ejecutarlistasimple.crearlistasimple();
-       /*ejecutarlistasimple.insertar(5);
-       ejecutarlistasimple.eliminar(3);
-       ejecutarlistasimple.listar();*/
+       /*ListaSimple listasimple = new ListaSimple();
+       listasimple.crearlistasimple();
+       listasimple.insertar(6);
+       listasimple.listar();
+       listasimple.eliminar(6);
+       listasimple.listar();*/
        
        
-        
-        
-     
-        
+       ListaDoble listadoble = new ListaDoble();
+       listadoble.crearlistadoble();
+       listadoble.insertar(9);
+       listadoble.insertar(4);
+       listadoble.listar();
+       //listadoble.eliminar(4);
+       //listadoble.modificar(9);
+       listadoble.listar();
+       
+       
         
     }
     
-  
-    
 }
-
-
-
-
-
-
-
-
-
