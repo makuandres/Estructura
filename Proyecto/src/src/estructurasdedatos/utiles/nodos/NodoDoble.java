@@ -47,42 +47,6 @@ private int dato;
 
     
     
-    private int dato;
-    private NodoDoble siguiente;
-    private NodoDoble anterior;
-    
-
-    public NodoDoble getsiguiente() {                    
-        return siguiente;
-        }
-    
-    public NodoDoble getanterior() {
-        return anterior;
-        }
-
-    public void setsiguiente(NodoDoble siguiente) {
-        this.siguiente = siguiente;
-        }
-    
-    public void setanterior(NodoDoble anterior) {
-        this.anterior = anterior;
-        }
-
-    public int getdato() {
-        return dato;
-        }
-
-    public void setdato(int dato) {
-        this.dato = dato;
-        }
-
-    public void crearNodo() {
-        this.siguiente = null;
-        this.anterior = null;
-        this.dato=0;
-        }
-
-    
     
 }
 

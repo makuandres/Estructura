@@ -23,7 +23,7 @@ public class EstructurasDeDatos {
      */
     public static void main(String[] args) {
         
-        *Ciclos ejerciciosciclos = new Ciclos();
+        /*Ciclos ejerciciosciclos = new Ciclos();
           ejerciciosciclos.ejecutarejerciciosciclos();
         
                
@@ -50,14 +50,10 @@ public class EstructurasDeDatos {
        listadoble.insertar(9);
        listadoble.insertar(4);
        listadoble.listar();
-       //listadoble.eliminar(4);
+       listadoble.eliminar(4);
        //listadoble.modificar(9);
        listadoble.listar();
-<<<<<<< HEAD
-=======
-       
-       
->>>>>>> b9437a9451be1d00e50a0f86a7aa996ddfb5e24b
+
        
        
         
