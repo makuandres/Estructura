@@ -54,7 +54,7 @@ public class Pila {
        public void des_apilar() {       
         if (vacia()) {                                                                                      
         } else {             
-            System.out.println("dato ( " + tope.getDato().getNombre() + " )" + " Ha sido eliminado");                  
+            System.out.println("El dato ( " + tope.getDato().getNombre() + " )" + " Ha sido eliminado");                  
             tope = tope.getSiguiente();                                                                      
 
         }
