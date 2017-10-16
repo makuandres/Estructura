@@ -11,4 +11,28 @@ package estructurasdedatos.cap3.mapas;
  */
 public class Mapa {
     
+    private int llave;
+    private String valor;
+    
+    public int getllave(){
+        
+        return llave;  
+    }
+        
+    public void setllave(int llave){
+        
+        this.llave = llave;  
+    }
+    
+    public String getvalor(){
+        
+        return valor;
+    }
+    
+    public void setvalor (String valor){
+        this.valor = valor;    
+    }
+    
+    
+    
 }
