@@ -19,7 +19,7 @@ public class ArbolB{
 
         
     public void Insertar(int nodo) {
-            if (vacio()) {
+            if (raiz!= null) {
                 NodoArbol nuevonodo = new NodoArbol();
                 nuevonodo.dato = nodo;
                 nuevonodo.hijoderecho= new ArbolB();
@@ -38,7 +38,7 @@ public class ArbolB{
         
     public ArbolB Buscar(int nodo){
             ArbolB subarbol = null;
-            if(!vacio()){
+            if(raiz!= null){
                 if(nodo == raiz.dato){
                     return this;
                 }else{
@@ -78,7 +78,7 @@ public class ArbolB{
      
     
     public int AlturaArbol(){
-            if(vacio()){
+            if(raiz!= null){
                 return 0;
             }else{
                 int hijoizquierdo=raiz.hijoizquierdo.AlturaArbol();
@@ -118,5 +118,32 @@ public class ArbolB{
         }
     }
 
+   public void orden(){
+            if(raiz!= null){
+                raiz.hijoizquierdo.orden();
+                System.out.print(raiz.dato + ",");
+                raiz.hijoderecho.orden();
+            }
+        }
+   
+   
+    public void preorden(){
+            if(raiz!= null){
+                System.out.print(raiz.dato + ",");
+                raiz.hijoizquierdo.preorden();
+                raiz.hijoderecho.preorden();
+            }
+        }
+        
+            
+     public void postorden(){
+            if(raiz!= null){
+                raiz.hijoizquierdo.postorden();
+                raiz.hijoderecho.postorden();
+                System.out.print(raiz.dato + ",");
+            }
+        }   
+    
+    
     
     }
