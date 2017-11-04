@@ -7,10 +7,19 @@ package estructurasdedatos.cap5.grafos;
 
 /**
  *
- * @author tusk
+ * @author Maku
  */
-public class Grafo {
+public class Vertice {
     
+    private String dato;
+
     
+    public String getDato() {
+        return dato;
+    }
+
+    public void setDato(String dato) {
+        this.dato = dato;
+}
     
 }
