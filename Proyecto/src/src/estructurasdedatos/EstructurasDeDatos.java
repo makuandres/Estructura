@@ -11,6 +11,7 @@ import estructurasdedatos.cap1.complejidad.EjerciciosComplejidad;
 import estructurasdedatos.cap2.arreglos.Vector;
 import estructurasdedatos.cap2.listas.ListaDoble;
 import estructurasdedatos.cap2.listas.ListaSimple;
+import estructurasdedatos.cap5.grafos.Grafo;
 
 /**
  *
@@ -45,15 +46,18 @@ public class EstructurasDeDatos {
        listasimple.listar();*/
        
        
-       ListaDoble listadoble = new ListaDoble();
+       /*ListaDoble listadoble = new ListaDoble();
        listadoble.crearlistadoble();
        listadoble.insertar(9);
        listadoble.insertar(4);
        listadoble.listar();
        listadoble.eliminar(4);
        //listadoble.modificar(9);
-       listadoble.listar();
+       listadoble.listar();*/
 
+       Grafo ejerciciografo = new Grafo();
+       ejerciciografo.Grafoejercicio();
+       
        
        
         
